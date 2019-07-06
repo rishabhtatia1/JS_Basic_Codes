@@ -9,10 +9,4 @@ firstLast([undefined, 4, "6", "hello", null]) ➞ [undefined, null]*/
 // SOLUTION 1
 function firstLast(arr) {
 	return [arr[0],arr[(arr.length - 1)]];
-
-}
-// SOLUTION 2
-function firstLast(arr) {
-	return [arr[0],arr[(arr.length - 1)]];
-
 }

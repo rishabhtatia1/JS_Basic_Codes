@@ -11,5 +11,4 @@ function isEvenOrOdd(num) {
 			return "even";
 	else
 		return "odd";
-
 }

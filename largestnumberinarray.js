@@ -19,5 +19,5 @@ function findLargestNum(arr) {
 }
 //2
 function findLargestNum(arr) {
-   return Math.max.apply(null, arr)
+   return Math.max.apply(null, arr);
 }

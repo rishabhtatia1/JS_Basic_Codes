@@ -16,5 +16,5 @@ function checkPalindrome(str) {
       return false;
     }
   }
-return true;
+  return true;
 }

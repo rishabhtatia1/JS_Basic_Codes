@@ -1,4 +1,4 @@
-/8Product Divisible By Sum?
+/*Product Divisible By Sum?
 Write a function that returns true if the product of an array is divisible by the sum of that same array.
 
 Examples
@@ -20,10 +20,9 @@ function divisible(arr) {
 		}
 	if (product % sum === 0)
 			return true;
-			else
-				return false;
+	else
+			return false;
 		}
-
 //2
 function divisible(arr) {
 	var p = arr.reduce((total,value)=>{

@@ -14,5 +14,4 @@ function MultiplyByLength(arr) {
 			arr[i] = arr[i] * arr.length;
 		}
 	return arr;
-
 }

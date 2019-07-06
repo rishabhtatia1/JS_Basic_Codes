@@ -7,5 +7,4 @@ concat([7, 8], [10, 9, 1, 1, 2]) ➞ [7, 8, 10, 9, 1, 1, 2]
 */
 function concat(arr1, arr2) {
 	return arr1.concat(arr2);
-
 }
