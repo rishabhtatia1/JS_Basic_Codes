@@ -15,11 +15,9 @@ checkAllEven([2, 4, 6]) ➞ true
 */
 // Fix this incorrect code!
 function checkAllEven(arr) {
-  return arr.every(checkEven);
+    return arr.every(checkEven);
 }
+
 function checkEven(x) {
-	if (x % 2 === 0)
-	 return true;
-	else
-	 return false;
+    return x % 2 === 0;
 }

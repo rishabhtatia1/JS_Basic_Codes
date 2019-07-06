@@ -8,28 +8,23 @@ divisible[4, 2, 6] ➞ true
 */
 // 1
 function divisible(arr) {
-	let sum = 0;
-	let product = 1;
-	for (let i = 0;i < arr.length;i++)
-		{
-			  sum = sum + arr[i];
-		}
-		for (let i = 0;i < arr.length;i++)
-		{
-			 product = product * arr[i];
-		}
-	if (product % sum === 0)
-			return true;
-	else
-			return false;
-		}
+    let sum = 0;
+    let product = 1;
+    for (let i = 0; i < arr.length; i++) {
+        sum = sum + arr[i];
+    }
+    for (let i = 0; i < arr.length; i++) {
+        product = product * arr[i];
+    }
+    return product % sum === 0;
+}
 //2
 function divisible(arr) {
-	var p = arr.reduce((total,value)=>{
-	  return total * value;
-  },1)
-  var s = arr.reduce((total,value)=>{
-	  return total + value;
-	},0)
-	return p % s === 0;
+    var p = arr.reduce((total, value) => {
+        return total * value;
+    }, 1)
+    var s = arr.reduce((total, value) => {
+        return total + value;
+    }, 0)
+    return p % s === 0;
 }

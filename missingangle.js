@@ -18,16 +18,16 @@ missingAngle(45, 45) ➞ "right"
 */
 // 1
 function missingAngle(angle1, angle2) {
-	let angle3=180-angle2-angle1;
-	if (angle3 === 90)
-		return "right";
-	else if (angle3 > 90)
-		return "obtuse";
-	else
-		return "acute";
+    let angle3 = 180 - angle2 - angle1;
+    if (angle3 === 90)
+        return "right";
+    else if (angle3 > 90)
+        return "obtuse";
+    else
+        return "acute";
 }
 // 2
 function missingAngle(angle1, angle2) {
-	let angle3=180-angle2-angle1;
-	return angle3 > 90 ? 'obtuse' : angle3 < 90 ? 'acute' : 'right';
+    let angle3 = 180 - angle2 - angle1;
+    return angle3 > 90 ? 'obtuse' : angle3 < 90 ? 'acute' : 'right';
 }

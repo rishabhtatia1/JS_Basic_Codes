@@ -10,5 +10,5 @@ find_index(["a", "g", "y", "d"], "d") ➞ 3
 
 */
 function find_index(arr, str) {
-return arr.indexOf(str);
+    return arr.indexOf(str);
 }
