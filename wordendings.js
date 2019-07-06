@@ -7,6 +7,4 @@ addEnding(["clever", "meek", "hurried", "nice"], "ly")
 addEnding(["new", "pander", "scoop"], "er")
 ➞ ["newer", "panderer", "scooper"]
 */
-function addEnding(arr, ending) {
-	return arr.map(s => s.concat(ending));
-}
+const addEnding = (arr, ending) => arr.map(s => s.concat(ending));

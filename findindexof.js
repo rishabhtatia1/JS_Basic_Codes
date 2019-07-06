@@ -9,6 +9,4 @@ find_index(["Red", "blue", "Blue", "Green"], "blue") ➞ 1
 find_index(["a", "g", "y", "d"], "d") ➞ 3
 
 */
-function find_index(arr, str) {
-    return arr.indexOf(str);
-}
+const find_index = (arr, str) => arr.indexOf(str);

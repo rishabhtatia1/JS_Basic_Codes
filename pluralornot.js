@@ -7,10 +7,6 @@ isPlural("changes") ➞ true
 isPlural("change") ➞ false
 */
 // 1
-function isPlural(word) {
-    return (word.substr(-1) === 's') ? true : false;
-}
+const isPlural = (word) => (word.substr(-1) === 's') ? true : false;
 // 2
-function isPlural(word) {
-    return word.substr(-1) === 's';
-}
+const isPlural = (word) => word.substr(-1) === 's';

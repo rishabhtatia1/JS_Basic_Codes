@@ -3,7 +3,7 @@
 Parameter a and b should not be undefined
 Both parameter should be number
   */
-  let addition = (a, b) => {
+  const addition = (a, b) => {
       if (typeof a !== "number" || typeof b !== "number") {
           return "Sorry but you didn't pass two numbers.";
       }

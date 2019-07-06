@@ -7,9 +7,10 @@ evenOddPartition([5, 8, 9, 2, 0]) ➞ [[8, 2, 0], [5, 9]]
 
 evenOddPartition([1, 0, 1, 0, 1, 0]) ➞ [[0, 0, 0], [1, 1, 1]]
 */
-function evenOddPartition(arr) {
-    let evenArr = [];
-    let oddArr = [];
+const evenOddPartition = (arr) => {
+    let evenArr = [],
+        oddArr = [],
+        all = [];
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] % 2 === 0) {
             evenArr.push(arr[i]);
@@ -17,6 +18,6 @@ function evenOddPartition(arr) {
             oddArr.push(arr[i]);
         }
     }
-    let all = [evenArr, oddArr];
+    all = [evenArr, oddArr];
     return all;
 }

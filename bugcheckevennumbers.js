@@ -14,10 +14,5 @@ checkAllEven([1, 2, 3, 4]) ➞ false
 checkAllEven([2, 4, 6]) ➞ true
 */
 // Fix this incorrect code!
-function checkAllEven(arr) {
-    return arr.every(checkEven);
-}
-
-function checkEven(x) {
-    return x % 2 === 0;
-}
+const checkAllEven = (arr) => arr.every(checkEven());
+const checkEven = (x) => x % 2 === 0;

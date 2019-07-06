@@ -6,6 +6,4 @@ match("hello", "hELLo") ➞ true
 
 match("motive", "emotive") ➞ false
 */
-function match(s1, s2) {
-	return ((s1.toLowerCase()) === s2.toLowerCase());
-}
+const match = (s1, s2) => ((s1.toLowerCase()) === s2.toLowerCase());
