@@ -20,10 +20,10 @@ function divisible(arr) {
 }
 //2
 function divisible(arr) {
-    var p = arr.reduce((total, value) => {
+    let p = arr.reduce((total, value) => {
         return total * value;
     }, 1)
-    var s = arr.reduce((total, value) => {
+    let s = arr.reduce((total, value) => {
         return total + value;
     }, 0)
     return p % s === 0;

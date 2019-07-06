@@ -10,7 +10,7 @@ findLargestNum([300, 200, 600, 150]) ➞ 600
 //1
 function findLargestNum(arr) {
     let max = arr[0];
-    for (var i = 1; i < arr.length; i++) {
+    for (let i = 1; i < arr.length; i++) {
         if (max < arr[i]) {
             max = arr[i];
         }
