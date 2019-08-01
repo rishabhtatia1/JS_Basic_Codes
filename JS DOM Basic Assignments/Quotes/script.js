@@ -1,7 +1,6 @@
 const quotes = [{
         name: "Coco Chanel",
         quote: "Success is most often achieved by those who don\'t know that failure is inevitable"
-
     },
     {
         name: "Kanye West",
@@ -18,11 +17,10 @@ const quotes = [{
 ];
 const quoteBtn = document.querySelector('#quoteBtn'),
     quote = document.querySelector('#quote'),
-    quoteAuthor = document.querySelector('#quoteAuthor');
+    quoteAuthor = document.querySelector('#quoteAuthor'),
+    displayQuote = () => {
+        let number = Math.floor(Math.random() * quotes.length);
+        quote.innerHTML = quotes[number].quote;
+        quoteAuthor.innerHTML = quotes[number].name;
+    };
 quoteBtn.addEventListener('click', displayQuote);
-
-function displayQuote() {
-    let number = Math.floor(Math.random() * quotes.length);
-    quote.innerHTML = quotes[number].quote;
-    quoteAuthor.innerHTML = quotes[number].name;
-}
