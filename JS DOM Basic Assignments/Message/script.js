@@ -1,6 +1,6 @@
-const sendBtn = document.querySelector('#sendBtn');
-const messageIn = document.querySelector('#messageIn');
-const messageOut = document.querySelector('#messageOut');
+const sendBtn = document.querySelector('#sendBtn'),
+      messageIn = document.querySelector('#messageIn'),
+      messageOut = document.querySelector('#messageOut');
 sendBtn.addEventListener('click', sendMsg);
 function sendMsg() {
     let content = messageIn.value;

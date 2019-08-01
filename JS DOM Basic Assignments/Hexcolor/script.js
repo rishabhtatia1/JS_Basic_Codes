@@ -1,7 +1,7 @@
-const hexNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
-const hexBtn = document.querySelector('.hexBtn');
-const bodyBck = document.querySelector('body');
-const hex = document.querySelector('.hex');
+const hexNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'],
+      hexBtn = document.querySelector('.hexBtn'),
+      bodyBck = document.querySelector('body'),
+      hex = document.querySelector('.hex');
 
 hexBtn.addEventListener('click', getHex);
 

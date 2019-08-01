@@ -1,17 +1,13 @@
-let counter = document.querySelector('.counter');
-const addCount = document.querySelector('#addCntBtn');
-const decCount = document.querySelector('#lowerCntBtn');
-let count = 0;
+let counter = document.querySelector('.counter'),
+    count = 0;
+const addCount = document.querySelector('#addCntBtn'),
+      decCount = document.querySelector('#lowerCntBtn');
 addCount.addEventListener('click', incrementCount);
 decCount.addEventListener('click', decrementCount);
 function incrementCount() {
     count++;
     counter.innerHTML = count;
-    if (counter.innerHTML > '0') {
-        counter.style.color = 'green';
-    } else if (counter.innerHTML === '0') {
-        counter.style.color = 'white';
-    }
+    (counter.innerHTML > '0') ? counter.style.color = 'green': counter.style.color = 'white';
     counter.animate([{
         opacity: '0.2'
     }, {
@@ -24,11 +20,7 @@ function incrementCount() {
 function decrementCount() {
     count--;
     counter.innerHTML = count;
-    if (counter.innerHTML < '0') {
-        counter.style.color = 'red';
-    } else if (counter.innerHTML === '0') {
-        counter.style.color = 'white';
-    }
+    (counter.innerHTML < '0') ? counter.style.color = 'red': counter.style.color = 'white';
     counter.animate([{
         opacity: '0.2'
     }, {

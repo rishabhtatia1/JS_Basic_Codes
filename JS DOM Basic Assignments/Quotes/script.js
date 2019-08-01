@@ -16,10 +16,11 @@ const quotes = [{
         quote: "There is only one way to avoid criticism: do nothing, say nothing, and be nothing."
     }
 ];
-const quoteBtn = document.querySelector('#quoteBtn');
-const quote = document.querySelector('#quote');
-const quoteAuthor = document.querySelector('#quoteAuthor');
+const quoteBtn = document.querySelector('#quoteBtn'),
+    quote = document.querySelector('#quote'),
+    quoteAuthor = document.querySelector('#quoteAuthor');
 quoteBtn.addEventListener('click', displayQuote);
+
 function displayQuote() {
     let number = Math.floor(Math.random() * quotes.length);
     quote.innerHTML = quotes[number].quote;
