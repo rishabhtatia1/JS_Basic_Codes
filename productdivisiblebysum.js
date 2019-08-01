@@ -13,10 +13,8 @@ const divisible = (arr) => {
       i;
     for (i = 0; i < arr.length; i++) {
         sum = sum + arr[i];
-    }
-    for (i = 0; i < arr.length; i++) {
         product = product * arr[i];
-    }
+      }
     return product % sum === 0;
 }
 //2
