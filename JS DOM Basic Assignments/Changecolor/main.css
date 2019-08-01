@@ -1,20 +1,22 @@
 body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
 .colorBtn {
-  padding: 10px 20px;
-  border: 3px solid white;
-  border-radius: 7px;
-  color: white;
-  background: rgba(0, 0, 0, 0.6);
-  font-size: 20px;
-  text-transform: capitalize;
-  cursor: pointer;
-  outline: none;
+	padding: 10px 20px;
+	border: 3px solid white;
+	border-radius: 7px;
+	color: white;
+	background: rgba(0, 0, 0, 0.6);
+	font-size: 20px;
+	text-transform: capitalize;
+	cursor: pointer;
+	outline: none;
 }
+
 .colorBtn:hover {
-  background: rgb(0, 0, 0);
+	background: rgb(0, 0, 0);
 }
