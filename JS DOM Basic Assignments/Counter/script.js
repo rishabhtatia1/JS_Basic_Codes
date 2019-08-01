@@ -4,7 +4,6 @@ const decCount = document.querySelector('#lowerCntBtn');
 let count = 0;
 addCount.addEventListener('click', incrementCount);
 decCount.addEventListener('click', decrementCount);
-
 function incrementCount() {
     count++;
     counter.innerHTML = count;
@@ -22,7 +21,6 @@ function incrementCount() {
         fill: 'forwards'
     });
 }
-
 function decrementCount() {
     count--;
     counter.innerHTML = count;

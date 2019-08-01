@@ -19,9 +19,7 @@ const quotes = [{
 const quoteBtn = document.querySelector('#quoteBtn');
 const quote = document.querySelector('#quote');
 const quoteAuthor = document.querySelector('#quoteAuthor');
-
 quoteBtn.addEventListener('click', displayQuote);
-
 function displayQuote() {
     let number = Math.floor(Math.random() * quotes.length);
     quote.innerHTML = quotes[number].quote;

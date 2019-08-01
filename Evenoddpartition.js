@@ -12,11 +12,7 @@ const evenOddPartition = (arr) => {
         oddArr = [],
         all = [];
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] % 2 === 0) {
-            evenArr.push(arr[i]);
-        } else {
-            oddArr.push(arr[i]);
-        }
+        (arr[i] % 2 === 0) ? evenArr.push(arr[i]): oddArr.push(arr[i]);
     }
     all = [evenArr, oddArr];
     return all;
