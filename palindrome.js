@@ -10,11 +10,11 @@ checkPalindrome("mom") ➞ true
 
 checkPalindrome("scary") ➞ false
 */
-function checkPalindrome(str) {
-  for (i = 0; i < str.length; i++) {
+const checkPalindrome = (str) => {
+  for (let i = 0; i < str.length; i++) {
 		if (str[i] !== str[str.length - 1 - i]) {
       return false;
     }
   }
-return true;
+  return true;
 }

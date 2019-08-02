@@ -5,6 +5,4 @@ hasSpaces("hello") ➞ false
 
 hasSpaces("hello, world") ➞ true
 */
-function hasSpaces(str) {
-	return str.includes(" ");
-}
+const hasSpaces = (str) => str.includes(" ");

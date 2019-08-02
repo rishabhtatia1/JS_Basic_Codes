@@ -5,6 +5,4 @@ numberArgs("a", "b", "c") ➞ 3
 
 numberArgs(10, 20, 30, 40, 50) ➞ 5
 */
-function numberArgs(/* fill-in */) {
-	return arguments.length;
-}
+const numberArgs = () => arguments.length;

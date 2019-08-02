@@ -6,6 +6,4 @@ addition(0) ➞ 1
 
 addition(9) ➞ 10
 */
-function addition(num) {
-	return num + 1;
-}
+const addition = (num) => num + 1;

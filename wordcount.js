@@ -5,13 +5,14 @@ countWords("Just an example here move along") ➞ 6
 
 countWords("This is a test") ➞ 4
 */
-function countWords(str) {
-	let count = 0;
-	for (let i = 0;i < str.length;i++) {
+const countWords = (str) => {
+	let count = 0,
+	    i;
+	for (i = 0; i < str.length; i++) {
 		if (str[i] === ' ') {
 			 count++;
 		}
 	}
-	count=count + 1;
+	count = count + 1;
 	return count;
 }
