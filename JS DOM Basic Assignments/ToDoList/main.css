@@ -1,0 +1,50 @@
+ * {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 20px 0;
+}
+
+#addPara li,
+#addComp li {
+  border-bottom: 1px solid lightgray;
+}
+
+#addPara input,
+#addComp input {
+  margin: 0 10px;
+}
+
+.marg {
+  padding: 0;
+  margin: 10px auto;
+}
+
+#addPara li p {
+  display: inline;
+  color: red;
+  margin-right: 10px;
+}
+
+#addPara li input {
+  margin-right: 10px;
+}
+
+.editBtn,
+.deleteBtn {
+  float: right;
+  margin: 0 5px;
+}

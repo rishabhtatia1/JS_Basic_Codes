@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FORM</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="text-center">
+    <h1>FORM VALIDATION</h1>
+    <div class="">
+      <form onsubmit="popUp()">
+        <div class=formGroup>
+          <label>Name</label>
+          <input type=text id="user" autocomplete="off">
+          <span id="name"></span>
+        </div>
+        <div class=formGroup>
+          <label>Password</label>
+          <input type=text id="password" autocomplete="off">
+          <span id="pass"></span>
+        </div>
+        <div class=formGroup>
+          <label>Confirm Password</label>
+          <input type=text id="confPassword" autocomplete="off">
+          <span id="cnfpass"></span>
+        </div>
+        <div class=formGroup>
+          <label>Mobile Number</label>
+          <input type=text id="mobile" autocomplete="off">
+          <span id="mobno"></span>
+        </div>
+        <div class=formGroup>
+          <label>Email</label>
+          <input type=text id="email" autocomplete="off">
+          <span id="emid"></span>
+        </div>
+        <input type="submit" id="submit" class="btn btn-success" value="Submit" onclick="return validate()">
+      </form>
+    </div>
+    <div id="submitContainer" class="col-md-4">
+      <h1>SUCCESFULLY SUBMITTED </h1>
+      <button type="button" id="closeBtn">CLOSE</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
