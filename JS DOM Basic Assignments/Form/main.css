@@ -1,0 +1,47 @@
+body {
+  position: relative;
+}
+
+form {
+  background: #d3d3d3;
+}
+
+.formGroup label {
+  display: block;
+  margin: 8px auto;
+}
+
+.formGroup input {
+  margin: auto auto;
+  border-radius: 5px;
+  border: 1px solid darkgray;
+  outline: none;
+}
+
+.formGroup input:focus {
+  border: 1px solid #357ec7;
+  box-shadow: 1px 1px 5px #357ec7;
+}
+
+.formGroup span {
+  font-size: .75rem;
+  font-weight: bold;
+  color: red;
+  display: block;
+}
+
+#submit {
+  margin: 10px auto;
+}
+
+#submitContainer {
+  background: lightgray;
+  border: 2px solid black;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hide {
+  display: none;
+}
