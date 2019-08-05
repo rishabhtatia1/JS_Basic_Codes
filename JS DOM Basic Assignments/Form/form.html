@@ -7,9 +7,9 @@
 </head>
 <body>
   <div class="text-center">
-    <h1>FORM VALIDATION</h1>
+    <h1>USER LOGIN</h1>
     <div class="">
-      <form onsubmit="popUp()">
+      <form id="myForm" onsubmit="popUp()">
         <div class=formGroup>
           <label>Name</label>
           <input type=text id="user" autocomplete="off">
@@ -35,12 +35,12 @@
           <input type=text id="email" autocomplete="off">
           <span id="emid"></span>
         </div>
-        <input type="submit" id="submit" class="btn btn-success" value="Submit" onclick="return validate()">
+        <button id="submit" class="btn btn-success" onclick="return validate()">Submit</button>
       </form>
     </div>
-    <div id="submitContainer" class="col-md-4">
+    <div id="submitContainer" class="hide col-md-4">
       <h1>SUCCESFULLY SUBMITTED </h1>
-      <button type="button" id="closeBtn">CLOSE</button>
+      <button type="button" id="closeBtn" onclick="return closeCart()">CLOSE</button>
     </div>
   </div>
   <script src="script.js"></script>

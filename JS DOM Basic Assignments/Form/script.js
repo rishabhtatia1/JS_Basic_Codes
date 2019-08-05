@@ -63,6 +63,11 @@ const validate = () => {
   }
 }
 
-function popUp() {
-  document.getElementById('submitContainer').style.display = 'block';
+const popUp = () => {
+  event.preventDefault();
+  document.getElementById('submitContainer').classList.remove('hide');
+}
+const closeCart = () => {
+  document.getElementById('submitContainer').classList.add('hide');
+  document.getElementById('myForm').reset();
 }
